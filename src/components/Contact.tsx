@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone,  Send } from "lucide-react";
+import { Mail, Phone, Send } from "lucide-react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 export default function Contact() {
@@ -28,7 +28,7 @@ export default function Contact() {
 
             <div className="space-y-6">
               <a
-                href="mailto:your-email@example.com"
+                href="mailto:syedburhanali25@gmail.com"
                 className="flex items-center gap-4 group"
               >
                 <div className="p-3 bg-gray-100 group-hover:bg-[#ccd5ae] transition-colors">
@@ -51,23 +51,21 @@ export default function Contact() {
 
             <div className="flex gap-4 pt-6">
               <a
-                href="#"
-                className="p-4 border-2 border-black hover:bg-black hover:text-white transition-all"
+                href="https://github.com/BurhanSyeed"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-4 border-2 border-black hover:bg-black hover:text-white transition-all text-black"
               >
                 <FaGithub size={24} />
               </a>
+              {/* FIXED NESTED ANCHOR HERE */}
               <a
-                href="#"
-                className="p-4 border-2 border-black hover:bg-black hover:text-white transition-all"
+                href="https://www.linkedin.com/in/syedburhan-ali-067302238"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-4 border-2 border-black hover:bg-[#0077b5] hover:border-[#0077b5] hover:text-white transition-all text-black"
               >
-                <a
-                  href="https://www.linkedin.com/in/syedburhan-ali-067302238"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-blue-600 transition-colors cursor-pointer"
-                >
-                  <FaLinkedinIn size={24} />
-                </a>
+                <FaLinkedinIn size={24} />
               </a>
             </div>
           </motion.div>
@@ -103,11 +101,15 @@ export default function Contact() {
                   Message
                 </label>
                 <textarea
-                  rows="4"
+                  rows={4}
                   className="w-full p-3 border-2 border-black focus:bg-[#ccd5ae] outline-none transition-colors"
                 ></textarea>
               </div>
-              <button className="w-full bg-[#344E41] text-[#344E41] p-4 font-black uppercase tracking-widest hover:bg-black transition-all flex justify-center items-center gap-3">
+              {/* FIXED BUTTON TEXT COLOR */}
+              <button
+                type="submit"
+                className="w-full bg-[#344E41] text-white p-4 font-black uppercase tracking-widest hover:bg-black transition-all flex justify-center items-center gap-3"
+              >
                 Send Message <Send size={18} />
               </button>
             </form>
