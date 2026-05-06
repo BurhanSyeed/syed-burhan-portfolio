@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import { motion } from "framer-motion";
 import img from "../img/mypic.png";
 import "../style.css";

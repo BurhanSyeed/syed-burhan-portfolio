@@ -1,7 +1,4 @@
-import React from "react";
-import GitLogo from "./GitLogo";
-import LightModeIcon from "./LightModeIcon";
-import DarModeIcon from "./DarModeIcon";
+
 import { Link } from "react-router-dom";
 
 export default function Navbar() {

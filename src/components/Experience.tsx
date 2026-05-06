@@ -1,5 +1,3 @@
-import React from "react";
-import { motion } from "framer-motion";
 import cv from "../doc/LaravelDeveloper_SyedBurhanAli.pdf";
 
 export default function Experience() {
