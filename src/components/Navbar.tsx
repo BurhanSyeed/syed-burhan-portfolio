@@ -2,52 +2,41 @@ import React from "react";
 import GitLogo from "./GitLogo";
 import LightModeIcon from "./LightModeIcon";
 import DarModeIcon from "./DarModeIcon";
+import { Link } from "react-router-dom";
 
-export default function Navbar({ dark, setDark }) {
-  const toggleTheme = () => setDark(!dark);
-  const baseClasses =
-    "p-2 hover:rounded-b-md hover:p-1 hover:font-bold hover:cursor-pointer hover:border";
-
-  const darkBorder = dark ? "hover:border-white" : "hover:border-slate-700";
+export default function Navbar() {
+  const li_border =
+    "hover:line-through hover:cursor-pointer";
+  
   return (
-    <div
-      className={`w-full  ${
-        dark ? "bg-slate-800 text-white" : "bg-sky-400 text-slate-900"
-      } flex  items-center justify-between p-3 `}
-    >
-      <div className={`${dark ? "text-white" : "text-slate-900"} `}>
-        Syed Bu
-        <span className={`${dark ? "text-sky-400" : "text-white"} font-roboto`}>
-          rhan Ali
-        </span>
+    <nav className="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-gray-100 py-4 px-10 flex justify-between items-center shadow-sm">
+      <div className="flex items-center space-x-2">
+        <div className="w-8 h-8 bg-[#344E41] rounded-lg flex items-center justify-center text-white font-bold">
+          B
+        </div>
+        <p className="text-xl font-black tracking-tighter uppercase text-[#344E41]">
+          Syed Burhan Ali
+        </p>
       </div>
-      <div>
-        <ul className="flex space-x-4">
-          {["Home", "About", "Contact Us"].map((item) => (
-            <li
-              key={item}
-              className={`md:${baseClasses} ${darkBorder} hidden md:block`}
-            >
-              {item}
-            </li>
-          ))}
-        </ul>
-      </div>
-      <div className="flex items-center">
-        <a
-          onClick={toggleTheme}
-          className={`rounded-full ${
-            dark ? "bg-slate-800 text-white" : "bg-sky-400 text-slate-900"
-          } p-2`}
-        >
-          {dark ? (
-            <DarModeIcon className="text-slate-900" />
-          ) : (
-            <LightModeIcon className="text-black" />
-          )}
-        </a>
-        <GitLogo className="text-slate-900 dark:text-white" />
-      </div>
-    </div>
+
+      <ul className="flex space-x-8">
+        <li className="hover:text-black cursor-pointer transition-colors border-b-2 border-transparent hover:border-black">
+          <Link to="/">Home</Link>
+        </li>
+        <li className="hover:text-black cursor-pointer transition-colors border-b-2 border-transparent hover:border-black">
+          <Link to="/about">About</Link>
+        </li>
+        <li className="hover:text-black cursor-pointer transition-colors border-b-2 border-transparent hover:border-black">
+          <Link to="/services">Services</Link>
+        </li>
+        <li className="hover:text-black cursor-pointer transition-colors border-b-2 border-transparent hover:border-black">
+          <Link to="/contact">Contact</Link>
+        </li>
+      </ul>
+
+      <button className="bg-[#344E41] text-white px-6 py-2 rounded-full font-bold hover:bg-black transition-all">
+        Hire Me
+      </button>
+    </nav>
   );
 }

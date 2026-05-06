@@ -1,25 +1,35 @@
 import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import "./style.css";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
+import Services from "./components/Services";
+import Experience from "./components/Experience";
+import Contact from "./components/Contact";
 function App() {
-  const [dark, setDark] = useState(false);
   // const [count, setCount] = useState(0)
-
+  const bgAboub =
+    "https://images.pexels.com/photos/593324/pexels-photo-593324.jpeg";
   return (
     <>
-      <div
-        className={
-          dark ? "bg-[#0D0F1A] text-[#F9FAFB]" : "bg-[#FDFDFE] text-[#111827]"
-        }
-      >
-        <Navbar dark={dark} setDark={setDark} />
-        <Home dark={dark} setDark={setDark}/>
-        <About dark={dark} setDark={setDark} />
+      <div className="">
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </Router>
       </div>
+
+      {/*  </div> */}
+      {/* <Service/> */}
     </>
   );
 }
