@@ -1,5 +1,5 @@
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import "./style.css";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
@@ -21,6 +21,7 @@ function App() {
           <Navbar active={active} setActive={setActive} />
           {/* <Home setActive={setActive} /> */}
           <Routes>
+            <Route path="/" element={<Navigate to="/home" replace />} />
             <Route path="/home" element={<Home setActive={setActive} />} />
             <Route path="/about" element={<About />} />
             <Route path="/experience" element={<Experience />} />
