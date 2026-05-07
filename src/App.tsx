@@ -13,7 +13,7 @@ import Projects from "./components/Projects";
 
 function App() {
   
-  const [active, setActive] = useState("");
+  const [active, setActive] = useState("Home");
   return (
     <>
       <div className="">
@@ -21,7 +21,7 @@ function App() {
           <Navbar active={active} setActive={setActive} />
           {/* <Home setActive={setActive} /> */}
           <Routes>
-            <Route path="/" element={<Home setActive={setActive} />} />
+            <Route path="/home" element={<Home setActive={setActive} />} />
             <Route path="/about" element={<About />} />
             <Route path="/experience" element={<Experience />} />
             <Route path="/services" element={<Services />} />
