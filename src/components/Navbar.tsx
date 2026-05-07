@@ -2,8 +2,6 @@
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
-  const li_border =
-    "hover:line-through hover:cursor-pointer";
   
   return (
     <nav className="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-gray-100 py-4 px-10 flex justify-between items-center shadow-sm">

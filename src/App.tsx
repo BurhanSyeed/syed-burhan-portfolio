@@ -8,9 +8,6 @@ import Services from "./components/Services";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 function App() {
-  // const [count, setCount] = useState(0)
-  const bgAboub =
-    "https://images.pexels.com/photos/593324/pexels-photo-593324.jpeg";
   return (
     <>
       <div className="">
