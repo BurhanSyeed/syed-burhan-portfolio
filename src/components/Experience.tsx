@@ -2,24 +2,24 @@ import cv from "../doc/Syed-Burhan-Ali-Laravel-Developer.pdf";
 export default function Experience() {
   const projectData = [
     {
-      year: "2025-2025",
-      title: "HOTEL MANAGEMENT SYSTEM",
-      org: "LARAVEL PROJECT",
-      desc: "Developed a comprehensive HMS with modules for bed booking, meal management, and financial reporting.",
-      tech: ["Laravel", "MySQL", "Bootstrap", "JS", "JQuery", "AJAX","FTP"],
-    },
-    {
-      year: "2023-2024",
+      year: "2023-2025",
       title: "EDUCATION MANAGEMENT SYSTEM",
       org: "FULL-STACK PROJECT",
       desc: "Built a system featuring attendance tracking, exam management, and automated position reports.",
       tech: ["Laravel", "MySQL", "Bootstrap", "JS", "JQuery", "AJAX", "GitHub"],
     },
+    {
+      year: "2025-2025",
+      title: "HOTEL MANAGEMENT SYSTEM",
+      org: "LARAVEL PROJECT",
+      desc: "Developed a comprehensive HMS with modules for bed booking, meal management, and financial reporting.",
+      tech: ["Laravel", "MySQL", "Bootstrap", "JS", "JQuery", "AJAX", "FTP"],
+    },
   ];
 
   const experienceData = [
     {
-      year: "2024-PRESENT",
+      year: "2025-2026",
       title: "LARAVEL DEVELOPER",
       org: "ENTERPRISE SOLUTIONS",
       desc: "Focusing on backend architecture, building scalable APIs, and multi-role administrative panels.",
