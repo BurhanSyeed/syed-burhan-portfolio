@@ -38,6 +38,8 @@ function About() {
                 "JS / JQuery",
                 "Alpine Js",
                 "Livewire",
+                "Git",
+                "GitHub",
                 "React",
                 "Tailwind CSS",
                 "Bootstrap",

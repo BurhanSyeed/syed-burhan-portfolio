@@ -1,5 +1,6 @@
 
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import img from "../img/mypic.png";
 import "../style.css";
 import About from "./About";
@@ -26,17 +27,17 @@ function Home() {
             transition={{ delay: 0.2 }}
             className="mt-6 text-lg md:text-xl text-[#344E41]/80 max-w-xl leading-relaxed"
           >
-            I'm a <strong>Full Stack Laravel Developer</strong> based in 
-             <strong> Pakistan</strong>. I specialize in building complex backend
+            I'm a <strong>Full Stack Laravel Developer</strong> based in
+            <strong> Pakistan</strong>. I specialize in building complex backend
             architectures and interactive web applications that scale.
           </motion.p>
 
           <div className="mt-10 flex space-x-4">
             <button className="bg-[#344E41] text-[#344E41] px-8 py-4 rounded-md font-bold uppercase tracking-widest hover:scale-105 transition-transform">
-              Let's Talk
+              <Link to="/">Let's Talk</Link>
             </button>
-            <button className="border-2 border-[#344E41] text-[#344E41] px-8 py-4 rounded-md font-bold uppercase tracking-widest hover:bg-[#344E41] hover:text-white transition-all">
-              View Work
+            <button className="border-2 border-[#344E41] text-[#344E41] px-8 py-4 rounded-md font-bold uppercase tracking-widest transition-all">
+              <Link to="/experience">View Work</Link>
             </button>
           </div>
         </div>
