@@ -77,8 +77,17 @@ export default function Contact() {
             viewport={{ once: true }}
             className="bg-gray-50 p-8 border-2 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]"
           >
-            <form className="space-y-6">
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              className="space-y-6"
+            >
               <div>
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="adc6aa82-b3e1-4091-9dea-cfc7b9a3d2ec"
+                ></input>
                 <label className="block text-xs font-black uppercase tracking-widest mb-2">
                   Name
                 </label>
@@ -108,7 +117,7 @@ export default function Contact() {
               {/* FIXED BUTTON TEXT COLOR */}
               <button
                 type="submit"
-                className="w-full bg-[#344E41] text-[#344E41] p-4 font-black uppercase tracking-widest hover:bg-black transition-all flex justify-center items-center gap-3"
+                className="w-full  text-[#344E41] p-4 font-black uppercase tracking-widest hover:bg-black transition-all flex justify-center items-center gap-3"
               >
                 Send Message <Send size={18} />
               </button>
