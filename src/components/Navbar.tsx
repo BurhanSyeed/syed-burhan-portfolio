@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { useLocation } from "react-router-dom";
 export default function Navbar({
-  active,
+  // active,
   setActive,
 }: {
   active: string;
