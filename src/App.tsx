@@ -21,7 +21,7 @@ function App() {
           <Navbar active={active} setActive={setActive} />
           {/* <Home setActive={setActive} /> */}
           <Routes>
-            <Route path="/home" element={<Home setActive={setActive} />} />
+            <Route path="/" element={<Home setActive={setActive} />} />
             <Route path="/about" element={<About />} />
             <Route path="/experience" element={<Experience />} />
             <Route path="/services" element={<Services />} />

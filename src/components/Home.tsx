@@ -86,7 +86,7 @@ function Home({ setActive }: { setActive: (s: string) => void }) {
               className="border-2 border-[#2D4030] text-[#2D4030] px-8 py-4 rounded-md font-bold uppercase tracking-widest text-[12px]
               hover:bg-[#2D4030] hover:text-white hover:-translate-y-1 transition-all duration-200"
             >
-              .{" "}
+              {" "}
               <Link to="/projects">
                 <span className="text-[#2D4030]"> View Work</span>
               </Link>
