@@ -94,6 +94,7 @@ export default function Contact() {
                 <input
                   type="text"
                   className="w-full p-3 border-2 border-black focus:bg-[#ccd5ae] outline-none transition-colors"
+                  name="name"
                 />
               </div>
               <div>
@@ -103,6 +104,7 @@ export default function Contact() {
                 <input
                   type="email"
                   className="w-full p-3 border-2 border-black focus:bg-[#ccd5ae] outline-none transition-colors"
+                  name="email"
                 />
               </div>
               <div>
@@ -112,6 +114,7 @@ export default function Contact() {
                 <textarea
                   rows={4}
                   className="w-full p-3 border-2 border-black focus:bg-[#ccd5ae] outline-none transition-colors"
+                  name="message"
                 ></textarea>
               </div>
               {/* FIXED BUTTON TEXT COLOR */}
