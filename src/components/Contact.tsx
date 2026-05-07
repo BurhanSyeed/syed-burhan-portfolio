@@ -87,7 +87,7 @@ export default function Contact() {
                   type="hidden"
                   name="access_key"
                   value="adc6aa82-b3e1-4091-9dea-cfc7b9a3d2ec"
-                ></input>
+                />
                 <label className="block text-xs font-black uppercase tracking-widest mb-2">
                   Name
                 </label>
