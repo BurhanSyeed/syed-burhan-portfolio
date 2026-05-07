@@ -1,5 +1,4 @@
 import cv from "../doc/LaravelDeveloper_SyedBurhanAli.pdf";
-
 export default function Experience() {
   const projectData = [
     {
