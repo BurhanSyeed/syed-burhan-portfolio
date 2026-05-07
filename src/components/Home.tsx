@@ -34,7 +34,7 @@ function Home() {
 
           <div className="mt-10 flex space-x-4">
             <button className="bg-[#344E41] text-[#344E41] px-8 py-4 rounded-md font-bold uppercase tracking-widest hover:scale-105 transition-transform">
-              <Link to="/">Let's Talk</Link>
+              <Link to="/contact">Let's Talk</Link>
             </button>
             <button className="border-2 border-[#344E41] text-[#344E41] px-8 py-4 rounded-md font-bold uppercase tracking-widest transition-all">
               <Link to="/experience">View Work</Link>
