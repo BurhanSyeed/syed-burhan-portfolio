@@ -1,4 +1,4 @@
-import cv from "../doc/Syed-Burhan-Ali-Laravel-Developer.pdf";
+
 import FadeIn from "./FadeIn";
 export default function Experience() {
   const timeline = [

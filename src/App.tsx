@@ -13,7 +13,7 @@ import Projects from "./components/Projects";
 
 function App() {
   
-  const [active, setActive] = useState(location);
+  const [active, setActive] = useState("");
   return (
     <>
       <div className="">

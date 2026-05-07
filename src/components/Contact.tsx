@@ -1,6 +1,6 @@
 import { useState } from "react";
 import FadeIn from "./FadeIn";
-import { FaLinkedinIn, FaGithub, FaWhatsapp } from "react-icons/fa";
+import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 export default function Contact() {
    const [form, setForm] = useState({ name: "", email: "", message: "" });
    const [sent, setSent] = useState(false);
