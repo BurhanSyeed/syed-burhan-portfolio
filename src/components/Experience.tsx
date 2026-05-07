@@ -1,4 +1,4 @@
-import cv from "../doc/LaravelDeveloper_SyedBurhanAli.pdf";
+import cv from "../doc/Syed-Burhan-Ali-Laravel-Developer.pdf";
 export default function Experience() {
   const projectData = [
     {
@@ -6,14 +6,14 @@ export default function Experience() {
       title: "HOTEL MANAGEMENT SYSTEM",
       org: "LARAVEL PROJECT",
       desc: "Developed a comprehensive HMS with modules for bed booking, meal management, and financial reporting.",
-      tech: ["Laravel", "MySQL", "Bootstrap", "JS", "JQuery", "AJAX"],
+      tech: ["Laravel", "MySQL", "Bootstrap", "JS", "JQuery", "AJAX","FTP"],
     },
     {
-      year: "2025-2026",
+      year: "2023-2024",
       title: "EDUCATION MANAGEMENT SYSTEM",
       org: "FULL-STACK PROJECT",
       desc: "Built a system featuring attendance tracking, exam management, and automated position reports.",
-      tech: ["Laravel", "MySQL", "Bootstrap", "JS", "JQuery", "AJAX"],
+      tech: ["Laravel", "MySQL", "Bootstrap", "JS", "JQuery", "AJAX", "GitHub"],
     },
   ];
 

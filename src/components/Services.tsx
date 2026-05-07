@@ -11,7 +11,7 @@ export default function Services() {
     },
     {
       title: "Fintech Integration",
-      desc: "Expert in Stripe, PayPal, and Escrow payment gateways with secure KYC workflows.",
+      desc: "Experience with Stripe, PayPal, and escrow-based payment secure KYC workflows.",
       icon: <CreditCard size={40} className="text-black" />,
       delay: 0.2,
     },
