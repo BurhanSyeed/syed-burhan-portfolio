@@ -108,7 +108,7 @@ export default function Contact() {
               {/* FIXED BUTTON TEXT COLOR */}
               <button
                 type="submit"
-                className="w-full bg-[#344E41] text-white p-4 font-black uppercase tracking-widest hover:bg-black transition-all flex justify-center items-center gap-3"
+                className="w-full bg-[#344E41] text-[#344E41] p-4 font-black uppercase tracking-widest hover:bg-black transition-all flex justify-center items-center gap-3"
               >
                 Send Message <Send size={18} />
               </button>
