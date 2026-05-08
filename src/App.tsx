@@ -13,10 +13,10 @@ import Projects from "./components/Projects";
 
 function App() {
   
-  const [active, setActive] = useState("Home");
+const [active, setActive] = useState<string>("Home");
   return (
     <>.
-    
+
       <div className="">
         <Router>
           <Navbar active={active} setActive={setActive} />
