@@ -4,7 +4,6 @@ export default function Footer({ setActive }: { setActive: (s: string) => void }
     "About",
     "Services",
     "Projects",
-    "Experience",
     "Contact",
   ];
   return (
@@ -32,7 +31,9 @@ export default function Footer({ setActive }: { setActive: (s: string) => void }
                 }}
                 className="text-white/50 hover:text-white text-[13px] font-semibold transition-colors tracking-wide"
               >
-                {link}
+                <span className="text-gray-400 hover:text-white text-[13px] font-semibold transition-colors tracking-wide">
+                  {link}
+                </span>
               </button>
             ))}
           </div>

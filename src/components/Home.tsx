@@ -1,7 +1,12 @@
-
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import img from "../img/mypic.png";
+import cv from "../doc/Syed-Burhan-Ali-Laravel-Developer.pdf";
+import About from "./About";
+import Services from "./Services";
+import Projects from "./Projects";
+import Contact from "./Contact";
+import Footer from "./Footer";
 
 function Home({ setActive }: { setActive: (s: string) => void }) {
   return (
@@ -72,9 +77,9 @@ function Home({ setActive }: { setActive: (s: string) => void }) {
               className="bg-[#2D4030] text-white px-8 py-4 rounded-md font-bold uppercase tracking-widest text-[12px]
               hover:bg-[#1a2a1c] hover:-translate-y-1 transition-all duration-200 shadow-lg shadow-[#2D4030]/20"
             >
-              <Link to="/contact">
-                <span className="text-[#2D4030]">Let's Talk</span>
-              </Link>
+              <a href={cv}>
+                <span className="text-[#2D4030]">Resume</span>
+              </a>
             </button>
             <button
               onClick={() => {
@@ -129,7 +134,7 @@ function Home({ setActive }: { setActive: (s: string) => void }) {
             {/* Placeholder avatar when no image */}
             <div className="w-full h-full bg-[#a3b18a] flex items-center justify-center">
               <div className="text-center">
-                  <img src={img} alt="MyPic.jeg" className="w-full h-vh" />
+                <img src={img} alt="MyPic.jeg" className="w-full h-vh" />
                 {/* <p className="text-[#2D4030]/70 font-bold text-lg">
                   Syed Burhan
                 </p> */}
@@ -164,6 +169,11 @@ function Home({ setActive }: { setActive: (s: string) => void }) {
           </div>
         </motion.div>
       </section>
+      <About />
+      <Services />
+      <Projects />
+      <Contact />
+      <Footer />
     </>
   );
 }
