@@ -15,7 +15,8 @@ function App() {
   
   const [active, setActive] = useState("Home");
   return (
-    <>
+    <>.
+    
       <div className="">
         <Router>
           <Navbar active={active} setActive={setActive} />
