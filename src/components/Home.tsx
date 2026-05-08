@@ -6,7 +6,6 @@ import About from "./About";
 import Services from "./Services";
 import Projects from "./Projects";
 import Contact from "./Contact";
-import Footer from "./Footer";
 
 function Home({ setActive }: { setActive: (s: string) => void }) {
   return (
@@ -173,7 +172,7 @@ function Home({ setActive }: { setActive: (s: string) => void }) {
       <Services />
       <Projects />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

@@ -13,7 +13,7 @@ import Projects from "./components/Projects";
 
 function App() {
   
-const [active, setActive] = useState<string>("Home");
+const [active, setActive] = useState("Home");
   return (
     <>.
 
