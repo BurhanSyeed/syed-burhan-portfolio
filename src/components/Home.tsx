@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import img from "../img/mypic.png";
-import cv from "../doc/Syed-Burhan-Ali-Laravel-Developer.pdf";
+import cv from "../doc/Syed Burhan Ali— Laravel Developer.pdf";
 import About from "./About";
 import Services from "./Services";
 import Projects from "./Projects";
