@@ -127,6 +127,7 @@ export default function Contact() {
           >
             <div className="flex flex-col md:flex-row gap-5">
               <div className="flex-1 flex flex-col gap-1.5">
+                <input type="hidden" name="access_key" value="adc6aa82-b3e1-4091-9dea-cfc7b9a3d2ec"></input>
                 <label className="text-[12px] font-bold uppercase tracking-wider text-[#2D4030]/60">
                   Your Name
                 </label>
@@ -138,6 +139,7 @@ export default function Contact() {
                   onChange={(e) => setForm({ ...form, name: e.target.value })}
                   className="border border-[#2D4030]/15 rounded-lg px-4 py-3 text-[14px] text-[#2D4030] placeholder-[#2D4030]/30
                     focus:outline-none focus:border-[#2D4030] transition-colors"
+                    name="name"
                 />
               </div>
               <div className="flex-1 flex flex-col gap-1.5">
@@ -146,6 +148,7 @@ export default function Contact() {
                 </label>
                 <input
                   type="email"
+                  name="email"
                   required
                   placeholder="you@email.com"
                   value={form.email}
@@ -163,6 +166,7 @@ export default function Contact() {
                 required
                 rows={5}
                 placeholder="Tell me about your project..."
+                name="message"
                 value={form.message}
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
                 className="border border-[#2D4030]/15 rounded-lg px-4 py-3 text-[14px] text-[#2D4030] placeholder-[#2D4030]/30
