@@ -2,15 +2,26 @@ import { useState } from "react";
 import FadeIn from "./FadeIn";
 import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 export default function Contact() {
-   const [form, setForm] = useState({ name: "", email: "", message: "" });
-   const [sent, setSent] = useState(false);
+  const [result, setResult] = useState("");
 
-   const handleSubmit = (e: React.FormEvent) => {
-     e.preventDefault();
-     setSent(true);
-     setTimeout(() => setSent(false), 3000);
-     setForm({ name: "", email: "", message: "" });
-   };
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+    formData.append("access_key", "adc6aa82-b3e1-4091-9dea-cfc7b9a3d2ec");
+   
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+      const data = await response.json();
+      if (data.success) {
+        setResult("Form Submitted Successfully");
+        event.target.reset();
+      } else {
+        setResult("Error");
+      }
+  };
   return (
     <section id="contact" className="bg-[#ccd5ae] py-28 px-8 md:px-24">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-16 items-start">
@@ -85,6 +96,9 @@ export default function Contact() {
               },
               {
                 icon: <FaLinkedinIn />,
+                label: "LinkedIn",
+                value: "linkedin.com/in/syedburhan",
+                link: "https://www.linkedin.com/in/syedburhan-ali-067302238/",
                 // icon: (
                 //   <svg
                 //     className="w-5 h-5"
@@ -122,12 +136,11 @@ export default function Contact() {
         {/* Right form */}
         <FadeIn delay={0.15} className="md:w-7/12 w-full">
           <form
-            onSubmit={handleSubmit}
+            onSubmit={onSubmit}
             className="bg-white rounded-2xl p-8 shadow-xl space-y-5"
           >
             <div className="flex flex-col md:flex-row gap-5">
               <div className="flex-1 flex flex-col gap-1.5">
-                <input type="hidden" name="access_key" value="adc6aa82-b3e1-4091-9dea-cfc7b9a3d2ec"></input>
                 <label className="text-[12px] font-bold uppercase tracking-wider text-[#2D4030]/60">
                   Your Name
                 </label>
@@ -135,11 +148,9 @@ export default function Contact() {
                   type="text"
                   required
                   placeholder="Syed Burhan"
-                  value={form.name}
-                  onChange={(e) => setForm({ ...form, name: e.target.value })}
                   className="border border-[#2D4030]/15 rounded-lg px-4 py-3 text-[14px] text-[#2D4030] placeholder-[#2D4030]/30
                     focus:outline-none focus:border-[#2D4030] transition-colors"
-                    name="name"
+                  name="name"
                 />
               </div>
               <div className="flex-1 flex flex-col gap-1.5">
@@ -151,8 +162,6 @@ export default function Contact() {
                   name="email"
                   required
                   placeholder="you@email.com"
-                  value={form.email}
-                  onChange={(e) => setForm({ ...form, email: e.target.value })}
                   className="border border-[#2D4030]/15 rounded-lg px-4 py-3 text-[14px] text-[#2D4030] placeholder-[#2D4030]/30
                     focus:outline-none focus:border-[#2D4030] transition-colors"
                 />
@@ -167,8 +176,6 @@ export default function Contact() {
                 rows={5}
                 placeholder="Tell me about your project..."
                 name="message"
-                value={form.message}
-                onChange={(e) => setForm({ ...form, message: e.target.value })}
                 className="border border-[#2D4030]/15 rounded-lg px-4 py-3 text-[14px] text-[#2D4030] placeholder-[#2D4030]/30
                   focus:outline-none focus:border-[#2D4030] transition-colors resize-none"
               />
@@ -176,10 +183,11 @@ export default function Contact() {
             <button
               type="submit"
               className={`w-full py-4 rounded-lg font-bold uppercase tracking-widest text-[13px] transition-all duration-200
-                ${sent ? "bg-green-600 text-white" : "bg-[#2D4030] text-white hover:bg-[#1a2a1c] hover:-translate-y-0.5 shadow-lg shadow-[#2D4030]/20"}`}
+                bg-[#2D4030] text-[#2D4030]  shadow-lg shadow-[#2D4030]/20`}
             >
-              {sent ? "✓ Message Sent!" : "Send Message"}
+              Submit Message
             </button>
+            <span>{result}</span>
           </form>
         </FadeIn>
       </div>
