@@ -1,51 +1,114 @@
-
-import FadeIn from './FadeIn';
+import FadeIn from "./FadeIn";
 
 export default function Projects() {
-    const projects = [
-      {
-        title: "ERP Management System",
-        category: "Full Stack",
-        desc: "Complete enterprise resource planning system with HR, payroll, inventory, and reporting modules for a manufacturing firm.",
-        stack: ["Laravel", "Vue.js", "MySQL", "Redis"],
-        color: "#ccd5ae",
-      },
-      {
-        title: "Multi-Vendor E-Commerce",
-        category: "Full Stack",
-        desc: "Scalable marketplace with vendor dashboards, Stripe payments, order tracking, and admin analytics panel.",
-        stack: ["Laravel", "React", "PostgreSQL", "Stripe"],
-        color: "#d4e0b8",
-      },
-      {
-        title: "Real Estate Platform",
-        category: "Backend API",
-        desc: "Property listing platform with advanced search filters, map integration, agent management and mortgage calculator.",
-        stack: ["Laravel API", "React", "Google Maps", "MySQL"],
-        color: "#e2eacc",
-      },
-      {
-        title: "Hospital Management System",
-        category: "Full Stack",
-        desc: "Patient records, appointment scheduling, billing, prescription management and doctor dashboard all in one system.",
-        stack: ["Laravel", "Alpine.js", "Livewire", "MySQL"],
-        color: "#ccd5ae",
-      },
-      {
-        title: "Learning Management System",
-        category: "Full Stack",
-        desc: "Online course platform with video streaming, quizzes, certificates, progress tracking and payment gateway integration.",
-        stack: ["Laravel", "React", "FFmpeg", "Stripe"],
-        color: "#d4e0b8",
-      },
-      {
-        title: "Inventory & POS System",
-        category: "Web App",
-        desc: "Point-of-sale system with barcode scanning, stock management, supplier tracking, and sales reporting.",
-        stack: ["Laravel", "Vue.js", "MySQL", "Chart.js"],
-        color: "#e2eacc",
-      },
-    ];
+  const projects = [
+    {
+      title: "Education Management System",
+      category: "Full Stack",
+      desc: "Developed a comprehensive Online Education Management System (EMS) with REST API integrations, student authentication and login system, daily attendance management, course outlines, a multi-branch college examination system, combined reports for same-class students across multiple branches, exam position reports, student and teacher analysis reports, class transfer management, and college announcement modules.",
+      stack: [
+        "Laravel",
+        "Laravel Sanctum",
+        "Bootstrap",
+        "JS",
+        "AJAX",
+        "GitHub",
+        "RBAC",
+        "MySQL",
+      ],
+      color: "#d4e0b8",
+    },
+    // {
+    //   title: "ERP Management System",
+    //   category: "Full Stack",
+    //   desc: "Complete enterprise resource planning system with HR, payroll, inventory, and reporting modules for a manufacturing firm.",
+    //   stack: ["Laravel", "Vue.js", "MySQL", "Redis"],
+    //   color: "#ccd5ae",
+    // },
+    // {
+    //   title: "Multi-Vendor E-Commerce",
+    //   category: "Full Stack",
+    //   desc: "Scalable marketplace with vendor dashboards, Stripe payments, order tracking, and admin analytics panel.",
+    //   stack: ["Laravel", "React", "PostgreSQL", "Stripe"],
+    //   color: "#d4e0b8",
+    // },
+    // {
+    //   title: "Real Estate Platform",
+    //   category: "Backend API",
+    //   desc: "Property listing platform with advanced search filters, map integration, agent management and mortgage calculator.",
+    //   stack: ["Laravel API", "React", "Google Maps", "MySQL"],
+    //   color: "#e2eacc",
+    // },
+    {
+      title: "Hotel Management System",
+      category: "Full Stack",
+      desc: "Enhanced the bed booking module by implementing daily, monthly, and promotional offer systems, developed multiple profit and loss reports, worked on a money transfer system, and built the order management system from scratch.",
+      stack: [
+        "Laravel",
+        "Bootstrap",
+        "JS",
+        "AJAX",
+        "jQuery",
+        "FTP",
+        "RBAC",
+        "MySQL",
+      ],
+      color: "#ccd5ae",
+    },
+
+    {
+      title: "Healthcare Management System",
+      category: "Web App",
+      desc: "Worked on a healthcare-based application including admin panel development, complex family tree management with multiple spouses and adopted children handling, PayPal IPN integration, secure API authentication using Laravel Sanctum, OneSignal push notifications,and WhatsApp API integration for automatically generating and sending user login credentials to registered users.",
+      stack: [
+        "Laravel",
+        "MySQL",
+        "REST APIs",
+        "Laravel Sanctum",
+        "PayPal IPN",
+        "OneSignal",
+        "FTP Filezila",
+      ],
+      color: "#e2eacc",
+    },
+    {
+      title: "AI URL Verification Platform",
+      category: "Web App",
+      desc: "Worked on an AI-powered URL verification platform integrated with Google Gemini for automated verification. Implemented token-based AI request handling, membership plans for AI usage limits, manual verification workflows, Stripe escrow payment system, dispute management, OneSignal push notifications, admin panel development, wallet management, and designed the complete MySQL database architecture with relational models.",
+      stack: [
+        "Laravel",
+        "MySQL",
+        "REST APIs",
+        "Google Gemini",
+        "Stripe Escrow",
+        "Laravel Sanctum",
+        "OneSignal",
+        "FTP Filezila",
+      ],
+      color: "#e2eacc",
+    },
+    {
+      title: "Project Management System (PMS)",
+      category: "Web App",
+      desc: "Developed a Project Management System with role-based access control using Spatie Laravel Permission. Implemented project and task assignment workflows between managers, developers, and QA teams, including task status tracking, bug reporting, QA review process, and permission-based visibility for specific users and roles.",
+      stack: [
+        "Laravel",
+        "MySQL",
+        "Livewire",
+        "Spatie Laravel Permission",
+        "REST APIs",
+        "Tailwind CSS",
+      ],
+      color: "#e2eacc",
+    },
+    {
+      title: "POS & Financial Management System",
+      category: "Web App",
+      desc: "Collaborated on a POS and financial management system by handling balance in/out financial entries, fixing bugs, and modifying frontend interfaces using Bootstrap.",
+      stack: ["Laravel", "MySQL", "JS", "AJAX", "Bootstrap"],
+      color: "#e2eacc",
+    },
+  ];
   return (
     <section id="projects" className="bg-white py-28 px-8 md:px-24">
       <div className="max-w-6xl mx-auto">

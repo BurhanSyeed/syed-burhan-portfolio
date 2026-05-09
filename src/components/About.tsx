@@ -17,6 +17,8 @@ function About() {
    "Bootstrap",
    "Tailwind CSS (Learning)",
    "Git & GitHub",
+   "Postman",
+   "FTP",
    "Stripe Integration",
    "PayPal IPN",
    "Google Gemini API Integration",
@@ -98,7 +100,7 @@ function About() {
             {/* Progress bars */}
             <div className="mt-10 space-y-4">
               {[
-                ["Backend (Laravel/PHP)", 70],
+                ["Backend (Laravel/PHP/Livewire)", 70],
                 ["Frontend (React)", 60],
                 ["Database Design", 80],
                 ["DevOps & Deployment", 70],

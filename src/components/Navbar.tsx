@@ -118,7 +118,9 @@ export default function Navbar({
                 >
                   <Link to={link.toLocaleLowerCase()}>
                     {" "}
-                    <span className="text-[#2D4030]">{link}</span>
+                    <span className="text-[#2D4030] hover:bg-white hover:text-[#2D4030] hover:-translate-y-px">
+                      {link}
+                    </span>
                   </Link>
                 </button>
               ))}
