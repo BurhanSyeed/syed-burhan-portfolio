@@ -104,7 +104,7 @@ function Home({ setActive }: { setActive: (s: string) => void }) {
             transition={{ delay: 0.6 }}
             className="mt-14 flex gap-10"
           >
-            {[
+            {/* {[
               ["2+", "Years Exp."],
               ["40+", "Projects Done"],
               ["20+", "Happy Clients"],
@@ -117,7 +117,7 @@ function Home({ setActive }: { setActive: (s: string) => void }) {
                   {label}
                 </span>
               </div>
-            ))}
+            ))} */}
           </motion.div>
         </div>
 
